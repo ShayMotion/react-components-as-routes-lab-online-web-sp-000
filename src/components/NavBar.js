@@ -1,24 +1,36 @@
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <div className='navbar'>
-    <NacLink to="/" exact activeStyle={{
+    <NavLink to="/" exact
+    activeStyle={{
       background: 'pink'
     }}
     >Home</NavLink>
-    
+
     <NavLink
     to="/movies"
-    exact activeStyle={{
+    exact
+    activeStyle={{
       background: 'pink'
     }}
     >Movies</NavLink>
-    
+
+    <NavLink
+    to="/directors"
+    exact
+    activeStyle={{
+      background: 'pink'
+    }}
+    >Directors</NavLink>
+
     <NavLink
     to="/actors"
-    exact activeStyle={{
+    exact
+    activeStyle={{
       background: 'pink'
     }}
     >Actors</NavLink>
